@@ -11,7 +11,7 @@ pip install torch torchvision torchaudio
 
 then run
 ```bash
-pip install requirement.txt
+pip install -r requirement.txt
 ```
 
 ## Usage
