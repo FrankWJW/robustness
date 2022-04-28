@@ -8,12 +8,11 @@ except:
     import pickle
 
 import shutil
-from typing import Sequence, Optional, Sized
+from typing import Sequence
 
 import torch
 import torch.nn as nn
 import numpy as np
-from sklearn.metrics import roc_auc_score
 from sklearn.metrics import f1_score as f1_cal
 # import pytorch_lightning
 # from pytorch_lightning.metrics.classification import AUROC

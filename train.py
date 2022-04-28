@@ -3,7 +3,7 @@ import time
 
 import torch
 
-from util import AverageMeter, accuracy, cal_auc, AucMeter
+from util import AverageMeter, accuracy, AucMeter
 
 
 def train(epoch, train_loader, model, criterion, optimizer, print_freq):

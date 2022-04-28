@@ -1,27 +1,21 @@
-import shutil
-
 import os
 
 import argparse
+import os
 
-import numpy as np
-import torchvision.datasets
-from ray.tune.schedulers import ASHAScheduler
-from ray.tune.trial import ExportFormat
-from sklearn.metrics import confusion_matrix
-from torch import optim
+import ray
 import torch
 import torch.nn as nn
+import torchvision.datasets
 import torchvision.transforms as transforms
+from ray import tune
+from ray.tune.trial import ExportFormat
+from torch import optim
 from torch.utils.data import DataLoader
 
 from model.CascadeNet import build_cfg_list, cascade_net, build_e2e
-from model.CascadeNetPretrainDorisNet import load_model
-from train import train, train_multiclass
-from ray import tune
-import ray
-
-from util import AverageMeter, accuracy, AucMeter
+from train import train_multiclass
+from util import AverageMeter, AucMeter
 
 transform_train = transforms.Compose([
     transforms.RandomResizedCrop(224),

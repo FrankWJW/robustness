@@ -1,15 +1,12 @@
 import os
+import sys
 
+import numpy as np
 import torch
 import torch.nn as nn
-import numpy as np
-from sklearn.metrics import roc_auc_score
-from tqdm import tqdm
-
 from model.CascadeNetPretrainDorisNet import load_dorisnet, E2E_intermedia
 from model.resnet import resnet18
-
-import sys
+from sklearn.metrics import roc_auc_score
 
 sys.path.append('./model/sourcemodel')
 sys.path.append('../Cascade_Transfer_Learning/model/sourcemodel')

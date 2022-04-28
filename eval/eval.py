@@ -1,12 +1,14 @@
 from __future__ import print_function
 
-import torch
-import numpy as np
-import time
 import sys
+import time
+
+import numpy as np
+import torch
+
 sys.path.append('../')
 
-from util import AverageMeter, accuracy, cal_auc, AucMeter, f1_score, multiclass_accuracy, ECEMeter
+from util import AverageMeter, accuracy, AucMeter, f1_score, multiclass_accuracy, ECEMeter
 
 
 def validate_multiclass(val_loader, model, criterion, **kwargs):
