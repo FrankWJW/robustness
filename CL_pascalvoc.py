@@ -294,7 +294,7 @@ if __name__ == '__main__':
     # folder
     parser.add_argument('--root_dir', type=str, default='/local/jw7u18/pascalvoc')
     parser.add_argument('--save_dir', type=str, default='/local/jw7u18/ray_results')
-    parser.add_argument('--name', type=str, default='CL_pascal', help='ray result folder name')
+    parser.add_argument('--name', type=str, default='test', help='ray result folder name')
 
     # name dataset
     parser.add_argument('--dataset', type=str, default='pascal')
