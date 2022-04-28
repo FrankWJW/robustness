@@ -5,7 +5,9 @@ Experiment on E2E network on pascal voc dataset
 ## Installation
 
 install pytorch
+```bash
 pip install torch torchvision torchaudio
+```
 
 then run
 ```bash
