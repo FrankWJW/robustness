@@ -17,7 +17,7 @@ pip install requirement.txt
 ## Usage
 
 ```python
-python CL_pascalvoc.py --root_dir=ROOT_FOR_DATASET --save_dir=ROOT_TO_SAVE_RESULT
+python E2E_pascalvoc.py --root_dir=ROOT_FOR_DATASET --save_dir=ROOT_TO_SAVE_RESULT
 ```
 
 ## Contributing
